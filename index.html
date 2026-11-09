@@ -1,134 +1,548 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>FollowLens: Instagram Non-Followers Checker &amp; Engagement Analyzer (Free)</title>
-<meta name="description" content="Free Instagram non-followers checker. See who doesn't follow you back, analyze post likes and comments, spot fake engagement. No password needed. Free 200 followers scan.">
-<meta name="keywords" content="instagram non followers checker, who unfollowed me instagram, instagram follower analyzer, instagram engagement rate calculator, fake followers checker, instagram unfollow tracker, followlens">
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>FollowLens – Instagram Non-Followers Checker & Engagement Analyzer</title>
+
+<meta name="description" content="Check who doesn't follow you back on Instagram with FollowLens. Analyze followers, engagement, post likes and comments. No Instagram password required. Free scan available.">
+
+<meta name="keywords" content="Instagram non followers checker, who doesn't follow me back, Instagram follower analyzer, Instagram engagement rate calculator, fake followers checker, Instagram unfollow tracker, FollowLens">
+
+<meta name="author" content="FollowLens">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="theme-color" content="#111111">
-<meta name="google-site-verification" content="S2JxSJBCXDekN-kPKsBKO61BUH4JLCfn6-IgjxNMipg" />
-<link rel="canonical" href="https://im-mohid.github.io/">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="S2JxSJBCXDekN-kPKsBKO61BUH4JLCfn6-IgjxNMipg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://im-mohid.github.io/Followlens/">
+
+<!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23111'/%3E%3Ccircle cx='11' cy='11' r='4.5' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M14.5 14.5L18 18' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Open Graph SEO -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FollowLens">
-<meta property="og:title" content="FollowLens: See who doesn't follow you back on Instagram">
-<meta property="og:description" content="Free non-followers checker and post engagement analyzer. No Instagram password needed.">
-<meta property="og:url" content="https://im-mohid.github.io/">
+<meta property="og:title" content="FollowLens – Instagram Non-Followers Checker">
+<meta property="og:description" content="Find Instagram non-followers, analyze engagement and check suspicious interactions. No password needed.">
+<meta property="og:url" content="https://im-mohid.github.io/Followlens/">
+
+<!-- Twitter SEO -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FollowLens: Instagram Non-Followers Checker">
-<meta name="twitter:description" content="Free scan of 200 followers + 200 following. Engagement and fake follower check.">
+<meta name="twitter:title" content="FollowLens – Instagram Follower Analyzer">
+<meta name="twitter:description" content="Check non-followers, analyze Instagram engagement and identify suspicious interactions.">
+
+<!-- Structured Data -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","name":"FollowLens","url":"https://im-mohid.github.io/"},
-{"@type":"SoftwareApplication","name":"FollowLens","applicationCategory":"SocialNetworkingApplication","operatingSystem":"Web","url":"https://followlensig.onrender.com/","description":"Instagram non-followers checker and post engagement analyzer.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How do I see who doesn't follow me back on Instagram?","acceptedAnswer":{"@type":"Answer","text":"Enter a public Instagram username in FollowLens. It compares followers and following and rechecks each account one by one."}},
-{"@type":"Question","name":"Do I need to give my Instagram password?","acceptedAnswer":{"@type":"Answer","text":"No. FollowLens never asks for your password. It reads only public information."}},
-{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The first 200 followers and 200 following are free, plus 2 post analyses per day. Bigger accounts use credits from $3."}},
-{"@type":"Question","name":"Can it detect fake engagement?","acceptedAnswer":{"@type":"Answer","text":"It flags likers with no photo, number-heavy usernames and spam comments. It is an estimate, not proof."}},
-{"@type":"Question","name":"Does it work for private accounts?","acceptedAnswer":{"@type":"Answer","text":"No. Only public profiles can be analyzed."}}]}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://im-mohid.github.io/Followlens/#website",
+      "name": "FollowLens",
+      "url": "https://im-mohid.github.io/Followlens/",
+      "description": "Instagram non-followers checker and engagement analyzer."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://im-mohid.github.io/Followlens/#software",
+      "name": "FollowLens",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web",
+      "url": "https://followlensig.onrender.com/",
+      "description": "Instagram non-followers checker and post engagement analyzer.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I see who doesn't follow me back on Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter a public Instagram username in FollowLens. It compares followers and following and rechecks accounts individually."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to give my Instagram password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. FollowLens does not ask for your Instagram password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FollowLens free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The first 200 followers and 200 following are free, plus two post analyses per day. Larger scans use credits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can FollowLens detect fake engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FollowLens flags certain suspicious engagement patterns, such as incomplete profiles and spam comments. These are estimates, not proof."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does FollowLens work for private Instagram accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. FollowLens analyzes publicly accessible profiles."
+          }
+        }
+      ]
+    }
+  ]
+}
 </script>
+
 <style>
-:root{--bg:#fff;--card:#f4f4f5;--ink:#1a1a1a;--muted:#5f5f68;--line:#8884}
-@media(prefers-color-scheme:dark){:root{--bg:#111;--card:#1d1d20;--ink:#eee;--muted:#a5a5ae}}
-*{box-sizing:border-box}
-body{margin:0;font:15px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",Arial,sans-serif;background:var(--bg);color:var(--ink)}
-a{color:var(--ink)}
-.w{max-width:1000px;margin:0 auto;padding:0 18px}
-header{border-bottom:1px solid var(--line);padding:12px 0}
-header .w{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.b{font-weight:700;font-size:18px;text-decoration:none}
-nav a{margin-left:14px;font-size:14px;color:var(--muted);text-decoration:none}
-.btn{display:inline-block;padding:11px 20px;border-radius:6px;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;border:1px solid var(--ink)}
-.btn.g{background:var(--card);color:var(--ink);border-color:var(--line)}
-.hero{padding:44px 0 28px}
-h1{font-size:clamp(26px,5vw,40px);line-height:1.2;margin:0 0 12px}
-h2{font-size:clamp(20px,3.4vw,26px);margin:0 0 10px}
-.sub{color:var(--muted);max-width:680px}
-.cta{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
-.pills{display:flex;gap:8px;flex-wrap:wrap;padding:0;list-style:none;margin:16px 0 0}
-.pills li{padding:5px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);font-size:13px;color:var(--muted)}
-section{padding:30px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-.c{padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
-.c h3{margin:0 0 6px;font-size:16px}
-.c p{margin:0;color:var(--muted);font-size:14px}
-ol.s{padding-left:20px}
-ol.s li{margin-bottom:8px}
-.pr{font-size:30px;font-weight:800}
-details{border:1px solid var(--line);border-radius:8px;background:var(--card);margin-bottom:8px;padding:12px 16px}
-summary{cursor:pointer;font-weight:600}
-details p{margin:8px 0 0;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:13px}
-@media(max-width:600px){nav{display:none}.hero{padding-top:28px}.btn{width:100%;text-align:center}}
+:root {
+  --bg: #ffffff;
+  --card: #f4f4f5;
+  --ink: #1a1a1a;
+  --muted: #5f5f68;
+  --line: #8884;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111111;
+    --card: #1d1d20;
+    --ink: #eeeeee;
+    --muted: #a5a5ae;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 15px/1.65 system-ui, -apple-system, "Segoe UI",
+        Roboto, "Noto Sans Bengali", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+a {
+  color: var(--ink);
+}
+
+.w {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+header .w {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.b {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 14px;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+}
+
+.btn.g {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.hero {
+  padding: 44px 0 28px;
+}
+
+h1 {
+  font-size: clamp(26px, 5vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: clamp(20px, 3.4vw, 26px);
+  margin: 0 0 10px;
+}
+
+.sub {
+  color: var(--muted);
+  max-width: 680px;
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin: 16px 0 0;
+}
+
+.pills li {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+section {
+  padding: 30px 0;
+  scroll-margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.c {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.c h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.c p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+ol.s {
+  padding-left: 20px;
+}
+
+ol.s li {
+  margin-bottom: 8px;
+}
+
+.pr {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  margin-bottom: 8px;
+  padding: 12px 16px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 22px 0 40px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="w">
-<a class="b" href="/">FollowLens</a>
-<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
-<a class="btn" href="https://followlensig.onrender.com/" rel="noopener">Open App</a>
-</div></header>
+
+<header>
+  <div class="w">
+    <a class="b" href="/Followlens/">FollowLens</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn" href="https://followlensig.onrender.com/" rel="noopener">
+      Open App
+    </a>
+  </div>
+</header>
 
 <main>
-<section class="hero"><div class="w">
-<h1>Instagram Non-Followers Checker: see who doesn't follow you back</h1>
-<p class="sub">FollowLens compares followers and following, confirms every non-follower one by one, and analyzes post likes and comments to spot fake engagement. Public data only. No Instagram password needed.</p>
-<div class="cta">
-<a class="btn" href="https://followlensig.onrender.com/" rel="noopener">Try it here: free scan</a>
-<a class="btn g" href="#pricing">See pricing</a>
-</div>
-<ul class="pills"><li>200 followers + 200 following free</li><li>2 post analyses free daily</li><li>Any account size</li><li>From $3</li></ul>
-</div></section>
 
-<section id="features"><div class="w">
-<h2>Instagram follower analyzer features</h2>
-<div class="grid">
-<div class="c"><h3>Who doesn't follow back</h3><p>Fans, mutual follows and confirmed non-followers in clean lists. Copy or export as CSV.</p></div>
-<div class="c"><h3>Engagement rate calculator</h3><p>Average likes, comments, posting frequency, best day and hour, top hashtags.</p></div>
-<div class="c"><h3>Fake follower and engagement check</h3><p>Flags no-photo accounts, number-heavy usernames and spam comments.</p></div>
-<div class="c"><h3>Post and reel analysis</h3><p>Paste any public post or reel link for likers, commenters and timing insights.</p></div>
-<div class="c"><h3>Unfollow tracker</h3><p>Signed-in users see new and lost followers between two scans.</p></div>
-<div class="c"><h3>Suggested accounts</h3><p>See Instagram's suggested accounts compared with followers and following.</p></div>
-</div></div></section>
+<section class="hero">
+  <div class="w">
 
-<section id="how"><div class="w">
-<h2>How to find who unfollowed you on Instagram</h2>
-<ol class="s">
-<li><b>Search</b> a public username on FollowLens.</li>
-<li><b>Scan</b> followers and following. Non-followers are rechecked one by one.</li>
-<li><b>Review</b> lists, engagement and post reports.</li>
-</ol>
-<div class="cta"><a class="btn" href="https://followlensig.onrender.com/" rel="noopener">Start free scan</a></div>
-</div></section>
+    <h1>Instagram Non-Followers Checker: See Who Doesn't Follow You Back</h1>
 
-<section id="pricing"><div class="w">
-<h2>Pricing</h2>
-<p class="sub">First 200 followers and 200 following are free. Full scans: 1 credit per 1,500 accounts, about $1 each (৳120 or 1 USDT). Minimum 3 credits, maximum 100. Pay once, no subscription.</p>
-<div class="grid">
-<div class="c"><h3>Free</h3><div class="pr">$0</div><p>200 + 200 accounts, 2 post analyses per day</p></div>
-<div class="c"><h3>Starter</h3><div class="pr">$3</div><p>3 credits, small or medium account</p></div>
-<div class="c"><h3>Pro</h3><div class="pr">$10</div><p>10 credits, several accounts</p></div>
-<div class="c"><h3>Business / Max</h3><div class="pr">$30 / $100</div><p>Large accounts and many reports</p></div>
-</div>
-<p class="sub">Pay with bKash, Nagad, Rocket, PayPal or USDT.</p>
-<div class="cta"><a class="btn" href="https://followlensig.onrender.com/#plans" rel="noopener">Get credits</a></div>
-</div></section>
+    <p class="sub">
+      FollowLens compares followers and following, confirms non-followers
+      individually, and analyzes post likes and comments to identify
+      suspicious engagement patterns. Public data only. No Instagram
+      password needed.
+    </p>
 
-<section id="faq"><div class="w">
-<h2>Frequently asked questions</h2>
-<details><summary>How do I see who doesn't follow me back on Instagram?</summary><p>Enter a public username in FollowLens. It compares followers and following and rechecks each account one by one.</p></details>
-<details><summary>Do I need to give my Instagram password?</summary><p>No. FollowLens never asks for your password and reads only public information.</p></details>
-<details><summary>Is it free?</summary><p>Yes. The first 200 followers and 200 following are free, plus 2 post analyses per day. Bigger accounts use credits from $3.</p></details>
-<details><summary>Can it detect fake engagement?</summary><p>It flags likers with no photo, number-heavy usernames and spam comments. It is an estimate, not proof.</p></details>
-<details><summary>Does it work for private accounts?</summary><p>No. Only public profiles can be analyzed.</p></details>
-</div></section>
+    <div class="cta">
+      <a class="btn" href="https://followlensig.onrender.com/">
+        Try it here: Free Scan
+      </a>
+
+      <a class="btn g" href="#pricing">
+        See Pricing
+      </a>
+    </div>
+
+    <ul class="pills">
+      <li>200 followers + 200 following free</li>
+      <li>2 post analyses free daily</li>
+      <li>Any account size</li>
+      <li>Plans from $3</li>
+    </ul>
+
+  </div>
+</section>
+
+<section id="features">
+  <div class="w">
+
+    <h2>Instagram Follower Analyzer Features</h2>
+
+    <div class="grid">
+
+      <div class="c">
+        <h3>Who Doesn't Follow Back</h3>
+        <p>View followers, mutual follows and confirmed non-followers in clean lists. Copy or export results as CSV.</p>
+      </div>
+
+      <div class="c">
+        <h3>Engagement Rate Calculator</h3>
+        <p>Analyze average likes, comments, posting frequency, best day and hour, and top hashtags.</p>
+      </div>
+
+      <div class="c">
+        <h3>Fake Follower & Engagement Check</h3>
+        <p>Flag suspicious patterns such as no-photo accounts, number-heavy usernames and spam comments.</p>
+      </div>
+
+      <div class="c">
+        <h3>Post and Reel Analysis</h3>
+        <p>Paste a public post or reel link to analyze available likers, commenters and timing insights.</p>
+      </div>
+
+      <div class="c">
+        <h3>Unfollow Tracker</h3>
+        <p>Signed-in users can compare scans to identify new and lost followers.</p>
+      </div>
+
+      <div class="c">
+        <h3>Suggested Accounts</h3>
+        <p>Compare available suggested accounts with followers and following.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="w">
+
+    <h2>How to Find Who Unfollowed You on Instagram</h2>
+
+    <ol class="s">
+      <li><b>Search:</b> Enter a publicly accessible Instagram username on FollowLens.</li>
+      <li><b>Scan:</b> Analyze available followers and following data.</li>
+      <li><b>Review:</b> Explore non-follower lists, engagement and post reports.</li>
+    </ol>
+
+    <div class="cta">
+      <a class="btn" href="https://followlensig.onrender.com/">
+        Start Free Scan
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="w">
+
+    <h2>FollowLens Pricing</h2>
+
+    <p class="sub">
+      The first 200 followers and 200 following are free.
+      Full scans: 1 credit per 1,500 accounts, approximately $1 per credit
+      (৳120 or 1 USDT). Minimum 3 credits, maximum 100.
+      Pay once, no subscription.
+    </p>
+
+    <div class="grid">
+
+      <div class="c">
+        <h3>Free</h3>
+        <div class="pr">$0</div>
+        <p>200 followers + 200 following and 2 post analyses per day.</p>
+      </div>
+
+      <div class="c">
+        <h3>Starter</h3>
+        <div class="pr">$3</div>
+        <p>3 credits for small or medium scans.</p>
+      </div>
+
+      <div class="c">
+        <h3>Pro</h3>
+        <div class="pr">$10</div>
+        <p>10 credits for multiple scans.</p>
+      </div>
+
+      <div class="c">
+        <h3>Business / Max</h3>
+        <div class="pr">$30 / $100</div>
+        <p>Large scans and multiple reports.</p>
+      </div>
+
+    </div>
+
+    <p class="sub">
+      Payment options: bKash, Nagad, Rocket, PayPal or USDT.
+    </p>
+
+    <div class="cta">
+      <a class="btn" href="https://followlensig.onrender.com/#plans">
+        Get Credits
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="faq">
+  <div class="w">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>How do I see who doesn't follow me back on Instagram?</summary>
+      <p>Enter a public Instagram username in FollowLens. It compares available followers and following data and rechecks accounts individually.</p>
+    </details>
+
+    <details>
+      <summary>Do I need to give my Instagram password?</summary>
+      <p>No. FollowLens does not ask for your Instagram password.</p>
+    </details>
+
+    <details>
+      <summary>Is FollowLens free?</summary>
+      <p>Yes. The first 200 followers and 200 following are free, plus 2 post analyses per day. Larger scans use credits starting at $3.</p>
+    </details>
+
+    <details>
+      <summary>Can FollowLens detect fake engagement?</summary>
+      <p>It flags suspicious engagement patterns, such as incomplete profiles and spam comments. These are estimates, not proof.</p>
+    </details>
+
+    <details>
+      <summary>Does FollowLens work for private accounts?</summary>
+      <p>No. FollowLens analyzes publicly accessible profiles only.</p>
+    </details>
+
+  </div>
+</section>
+
 </main>
 
-<footer><div class="w">
-<p>© FollowLens. Not affiliated with Instagram or Meta. <a href="https://followlensig.onrender.com/" rel="noopener">followlensig.onrender.com</a></p>
-</div></footer>
+<footer>
+  <div class="w">
+    <p>
+      © 2026 FollowLens. Not affiliated with, endorsed by, or sponsored by Instagram or Meta.
+    </p>
+
+    <p>
+      <a href="https://followlensig.onrender.com/" rel="noopener">
+        FollowLens Web App
+      </a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
