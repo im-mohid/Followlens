@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>FollowLens Guides</title><link>https://im-mohid.github.io/Followlens/</link><description>FollowLens product guides and updates</description><language>en</language></channel></rss>
+<rss version="2.0"><channel>
+<title>FollowLens Guides</title><link>https://im-mohid.github.io/Followlens/</link><description>Practical guides about Instagram follower comparisons and engagement analysis.</description><language>en</language>
+<item><title>How to see who doesn't follow you back</title><link>https://im-mohid.github.io/Followlens/who-doesnt-follow-back.html</link><guid>https://im-mohid.github.io/Followlens/who-doesnt-follow-back.html</guid><description>Understand follower and following comparisons.</description></item>
+<item><title>Instagram unfollow tracker</title><link>https://im-mohid.github.io/Followlens/instagram-unfollow-tracker.html</link><guid>https://im-mohid.github.io/Followlens/instagram-unfollow-tracker.html</guid><description>Compare two snapshots to review follower changes.</description></item>
+<item><title>Fake followers checker</title><link>https://im-mohid.github.io/Followlens/fake-followers-checker.html</link><guid>https://im-mohid.github.io/Followlens/fake-followers-checker.html</guid><description>Interpret possible suspicious account signals.</description></item>
+<item><title>Instagram engagement rate</title><link>https://im-mohid.github.io/Followlens/engagement-rate-calculator.html</link><guid>https://im-mohid.github.io/Followlens/engagement-rate-calculator.html</guid><description>Learn a simple engagement rate formula.</description></item>
+</channel></rss>

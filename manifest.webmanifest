@@ -1,9 +1,24 @@
 {
-  "name": "FollowLens",
+  "name": "FollowLens - Instagram Follower Analyzer",
   "short_name": "FollowLens",
-  "start_url": "/Followlens/",
-  "scope": "/Followlens/",
+  "description": "Review Instagram follower comparisons and engagement signals.",
+  "start_url": "https://im-mohid.github.io/Followlens/",
+  "scope": "https://im-mohid.github.io/Followlens/",
   "display": "standalone",
-  "background_color": "#f6f8fc",
-  "theme_color": "#5b55e7"
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://im-mohid.github.io/Followlens/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://im-mohid.github.io/Followlens/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }

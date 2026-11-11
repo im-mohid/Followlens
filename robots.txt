@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://im-mohid.github.io/Followlens/sitemap.xml
