@@ -1,0 +1,49 @@
+FOLLOWLENS PUBLISH CHECKLIST
+============================
+
+1) Upload all package contents to repository root:
+   https://github.com/im-mohid/Followlens
+2) Preserve the exact GitHub Pages project path capitalization: /Followlens/
+3) The Google Search Console verification meta tag is included in index.html only:
+   <meta name="google-site-verification" content="S2JxSJBCXDekN-kPKsBKO61BUH4JLCfn6-IgjxNMipg">
+   Keep it in the homepage <head>. Do not remove it.
+4) Sitemap: https://im-mohid.github.io/Followlens/sitemap.xml
+5) robots.txt points to the sitemap.
+6) Verify these after deployment:
+   - https://im-mohid.github.io/Followlens/
+   - https://im-mohid.github.io/Followlens/sitemap.xml
+   - https://im-mohid.github.io/Followlens/robots.txt
+   - https://im-mohid.github.io/Followlens/bangla.html
+   - https://im-mohid.github.io/Followlens/engagement-rate-calculator.html
+   - https://im-mohid.github.io/Followlens/og.png
+7) In Search Console, use URL Inspection on the homepage and request indexing if appropriate.
+   Submit the sitemap URL once. Do not repeatedly submit duplicates.
+8) Check every important URL returns HTTP 200 (legacy guide URLs are retained as redirect pages).
+9) Verify the Render app CTA and actual checkout pricing.
+10) Verify all feature claims against live app behavior.
+
+PRICING CLAIMS USED
+-------------------
+$1 per credit; $3 minimum purchase only. The page does not claim package sizes,
+credit expiry, refund rules, or subscription status.
+
+FEATURE CLAIMS USED
+-------------------
+Public followers/following analysis; engagement analysis; account-quality signals;
+unfollower comparison between saved scans.
+
+IMPORTANT
+---------
+The original homepage contained claims not in the confirmed configuration, including
+one-by-one rechecks, best posting day/hour, hashtag recommendations, likers/commenters
+lists, and suggested-account analysis. These have not been repeated as confirmed
+features. Add them only after verifying they are implemented and available to users.
+
+PRIVACY / TERMS
+---------------
+Privacy and Terms pages are draft disclosures requiring operator review. Audit actual
+database, logs, cookies, analytics, hosting and payment handling. Specify retention,
+deletion, refund, credit expiry, failed-scan handling and support contact accurately.
+
+This package does not change the Render backend, scan implementation, payment code,
+database, or fetch methods.

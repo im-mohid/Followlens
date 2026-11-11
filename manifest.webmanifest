@@ -1,0 +1,9 @@
+{
+  "name": "FollowLens",
+  "short_name": "FollowLens",
+  "start_url": "/Followlens/",
+  "scope": "/Followlens/",
+  "display": "standalone",
+  "background_color": "#f6f8fc",
+  "theme_color": "#5b55e7"
+}

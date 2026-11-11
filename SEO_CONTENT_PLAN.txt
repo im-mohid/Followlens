@@ -1,0 +1,26 @@
+CONTENT STRATEGY
+================
+
+Primary clusters:
+- Instagram followers/following analysis
+- Engagement analysis and engagement rate calculator
+- Account-quality/fake-account signals (with uncertainty)
+- Follower changes between saved scans
+- Trust, privacy, terms and responsible use
+
+Avoid:
+- Publishing many near-duplicate keyword pages.
+- Repeating keywords unnaturally.
+- Fake testimonials, ratings, user counts, or ranking claims.
+- FAQ schema solely to chase rich results.
+- Claims that a scan can prove intent or identity.
+
+Build topical authority:
+- Publish original tutorials based on the real app.
+- Add authentic screenshots with alt text and captions.
+- Explain methodology, limitations, update dates and authorship.
+- Link related pages naturally.
+- Collect genuine feedback and publish only permissioned testimonials.
+- Update content when product behavior changes.
+
+Ranking cannot be guaranteed by metadata, schema, or sitemap alone.
